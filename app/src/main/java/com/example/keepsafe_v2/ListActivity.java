@@ -152,7 +152,6 @@ public class ListActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //String name = adapterView.getItemAtPosition(i).toString();
                 Node entry = (Node) adapterView.getItemAtPosition(i);
                 String title = entry.getTitle();
                 Log.d(TAG, "onItemClick: You Clicked on " + title);
